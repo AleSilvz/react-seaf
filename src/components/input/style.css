@@ -1,0 +1,59 @@
+:root {
+  --text-color: #343a5e;
+}
+
+@media (max-width: 480px) {
+  .container-component-input {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-input-icon {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-input-icon input {
+    width: 271px;
+    height: 34px;
+    padding: 0 0 0 30px;
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    outline: none;
+    font-size: 25px;
+    font-weight: 200;
+    color: var(--text-color);
+  }
+
+  .container-input-icon input::placeholder {
+    font-size: 25px;
+    color: var(--text-color);
+    font-weight: 200;
+  }
+
+  .icon-icon {
+    position: absolute;
+    left: 0;
+    font-size: 25px;
+    color: var(--text-color);
+  }
+
+  .see {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    font-size: 15px;
+    color: var(--text-color);
+  }
+
+  .check {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    font-size: 20px;
+    color: var(--text-color);
+  }
+}

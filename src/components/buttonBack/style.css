@@ -1,0 +1,19 @@
+:root {
+  --text-color: #343a5e;
+}
+
+@media (max-width: 480px) {
+  .icon {
+    font-size: 40px;
+    margin: 15px 0 15px 15px;
+    color: var(--text-color);
+  }
+
+  .container-buttonBack h2:nth-child(1) {
+    margin-top: 20%;
+  }
+
+  .container-buttonBack h2:nth-child(2) {
+    margin-top: -50px;
+  }
+}

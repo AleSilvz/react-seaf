@@ -1,0 +1,51 @@
+@media (max-width: 480px) {
+  .container-login {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-input {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20%;
+    gap: 40px;
+  }
+
+  .container-login h3 {
+    font-weight: 200;
+    font-size: 1rem;
+    margin: 4% 0 0 50%;
+  }
+
+  .container-btns-login-singup .btn {
+    width: 70%;
+    height: 53px;
+    border-radius: 15px;
+    background: none;
+    border: 1px solid var(--text-color);
+    font-size: 24px;
+    transition: 0.3s;
+  }
+
+  .container-btns-login-singup .btn:active {
+    transform: scale(0.9);
+  }
+
+  .container-btns-login-singup .sing-up {
+    background: var(--text-color);
+    color: white;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .container-input p {
+    margin-top: -35px;
+    font-size: 0.9rem;
+  }
+}
