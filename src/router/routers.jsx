@@ -27,7 +27,7 @@ const NavRouter = createHashRouter([
     element: <Buy />,
   },
   {
-    basename: "/seaf",
+    basename: "/react-seaf",
   },
 ]);
 
