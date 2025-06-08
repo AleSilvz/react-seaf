@@ -58,7 +58,7 @@ function Buy() {
         }));
         setCompras(list);
 
-        const total = list.reduce((acc, e)=> acc + e.und * e.value, 0)
+        const total = list.reduce((acc, e) => acc + e.und * e.value, 0);
         setSaldoDiv(total);
       } catch (err) {
         console.error(err);
@@ -131,7 +131,7 @@ function Buy() {
         <h1>list itens</h1>
       </div>
 
-      {saldoD}
+      <h2>R$ {saldoD.toFixed(2)}</h2>
 
       {showModal ? (
         <div className="modal" style={{ position: "absolute", top: "50%" }}>
