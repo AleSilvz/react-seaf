@@ -4,6 +4,7 @@ import Login from "../pages/login/login";
 import SingUp from "../pages/sing up/singUp";
 import Account from "../pages/account/Account";
 import Buy from "../pages/buy/buy";
+import Snack from "../pages/snack/snack";
 
 const NavRouter = createHashRouter([
   {
@@ -25,6 +26,10 @@ const NavRouter = createHashRouter([
   {
     path: "/buy",
     element: <Buy />,
+  },
+  {
+    path: "/snack",
+    element: <Snack />,
   },
   {
     basename: "/react-seaf",
