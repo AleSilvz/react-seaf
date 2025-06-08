@@ -74,12 +74,12 @@ function SingUp() {
 
       const docRef = doc(db, users, uid);
       await setDoc(docRef, {
-        name: nickname,
+        name: nickname.toLowerCase(),
         email: email.toLowerCase(),
       });
       setIsCreate(true);
     } catch (err) {
-      alert('Esse email já existe!')
+      alert("Esse email já existe!");
       console.error(err);
     }
   }

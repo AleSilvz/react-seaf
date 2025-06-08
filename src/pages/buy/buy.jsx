@@ -29,8 +29,14 @@ function Buy() {
 
   async function enviar() {
     const uid = auth.currentUser.uid;
-    if (!name) return;
-    if (!valor) return;
+    if (!name) {
+      alert("Digite o nome do item!");
+      return;
+    }
+    if (!valor) {
+      alert("Digite o valor do item");
+      return;
+    }
     try {
       const docRef = doc(db, "users", uid, "buy", name);
       await setDoc(docRef, {
